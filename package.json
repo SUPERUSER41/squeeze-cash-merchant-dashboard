@@ -10,7 +10,6 @@
     "lint:fix": "eslint src --fix",
     "test": "jest",
     "test:watch": "jest src --watch --notify",
-    "precommit": "lint-staged",
     "format": "prettier --write \"src/**/*.+(js|md|ts|css|sass|less|graphql|yml|yaml|scss|json|vue)\""
   },
   "dependencies": {
@@ -44,7 +43,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn precommit"
+      "pre-commit": "lint-staged"
     }
   }
 }
