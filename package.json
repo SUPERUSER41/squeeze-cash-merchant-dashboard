@@ -9,6 +9,7 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "test": "jest",
+    "precommit": "lint-staged",
     "test:watch": "jest src --watch --notify",
     "format": "prettier --write \"src/**/*.+(js|md|ts|css|sass|less|graphql|yml|yaml|scss|json|vue)\""
   },
@@ -37,13 +38,7 @@
     "**/*.+(js|md|ts|css|sass|less|graphql|yml|yaml|scss|json|vue)": [
       "eslint --fix",
       "prettier --write",
-      "jest --findRelatedTests",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
