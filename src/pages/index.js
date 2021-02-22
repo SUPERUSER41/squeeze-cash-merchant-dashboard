@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>Squeeze merchant</h1>
+      <h1 className="font-medium text-5xl">Squeeze merchant</h1>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 tests
 package.json
+.eslintrc.json
 node_modules
 *.css
 *.md
