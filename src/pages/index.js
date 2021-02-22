@@ -1,4 +1,4 @@
-import Head from 'next/head';
+// eslint-disable-next-line import/no-unresolved
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
