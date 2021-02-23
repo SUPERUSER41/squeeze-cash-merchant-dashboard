@@ -1,6 +1,8 @@
 import { FiMenu, FiX, FiBell } from 'react-icons/fi';
 import { AiOutlineShop } from 'react-icons/ai';
 
+// ToDo: Refactor into components
+
 const Header = () => {
   return (
     <div className="flex items-center justify-between h-16 px-7 bg-gray-darkest">
