@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
+    "classnames": "^2.2.6",
     "jest": "^26.6.3",
     "next": "10.0.7",
     "react": "17.0.1",

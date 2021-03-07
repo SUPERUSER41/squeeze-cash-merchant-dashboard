@@ -7,6 +7,7 @@ import {
   RiArrowRightSLine,
   RiQrCodeLine,
   RiSettings4Line,
+  RiCloseFill,
 } from 'react-icons/ri';
 import { BsFillLightningFill } from 'react-icons/bs';
 import { IoPricetagOutline } from 'react-icons/io5';
@@ -24,6 +25,7 @@ const ICON_FAMILIES = {
     RiArrowRightSLine,
     RiQrCodeLine,
     RiSettings4Line,
+    RiCloseFill,
   },
   Bootstrap: {
     BsFillLightningFill,
@@ -40,5 +42,4 @@ const ICON_FAMILIES = {
 const Icon = ({ family, name, ...rest }) => {
   return createElement(ICON_FAMILIES[family][name], rest);
 };
-
 export default Icon;
