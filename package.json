@@ -9,7 +9,7 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "test": "jest",
-    "precommit": "",
+    "precommit": "lint-staged",
     "test:watch": "jest src --watch --notify",
     "format": "prettier --write \"src/**/*.+(js|md|ts|css|sass|less|graphql|yml|yaml|scss|json|vue)\""
   },

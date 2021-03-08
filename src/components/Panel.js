@@ -1,19 +1,19 @@
-import { createContext, useContext } from 'react';
+import { createContext } from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Icon from './Icon';
 
 const PanelContext = createContext();
 
-const usePanelContext = () => {
-  const context = useContext(PanelContext);
-  if (!context) {
-    throw new Error(
-      'Panel compound components cannot be rendered outside the Panel component',
-    );
-  }
-  return context;
-};
+// const usePanelContext = () => {
+//   const context = useContext(PanelContext);
+//   if (!context) {
+//     throw new Error(
+//       'Panel compound components cannot be rendered outside the Panel component',
+//     );
+//   }
+//   return context;
+// };
 
 const Header = ({ className, children, ...rest }) => {
   return (
