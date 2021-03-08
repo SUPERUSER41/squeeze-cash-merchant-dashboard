@@ -20,6 +20,45 @@ export default function Home() {
         </Panel.Header>
         <Panel.Body>
           <Menu>
+            <button
+              type="button"
+              className="group flex items-center justify-between px-4 py-5 bg-gray-light hover:bg-green transition-colors duration-300"
+            >
+              <div className="flex items-start flex-col">
+                <p className="font-normal text-xs text-gray-lightest group-hover:text-white">
+                  Select Store
+                </p>
+                <p className="font-normal text-gray-lightest group-hover:text-white">
+                  Rodney Bay
+                </p>
+              </div>
+
+              <Icon
+                family="Remix"
+                name="RiArrowRightSLine"
+                className="text-gray-lightest group-hover:text-white"
+                size="30"
+              />
+            </button>
+            <button
+              type="button"
+              className="group flex items-center justify-between px-4 py-5 bg-gray-light hover:bg-green transition-colors duration-300"
+            >
+              <div className="flex items-start flex-col">
+                <p className="font-normal text-xs text-gray-lightest group-hover:text-white">
+                  New Orders
+                </p>
+                <p className="font-normal text-gray-lightest group-hover:text-white">
+                  Available
+                </p>
+              </div>
+              <Icon
+                family="Remix"
+                name="RiArrowRightSLine"
+                className="text-gray-lightest group-hover:text-white"
+                size="30"
+              />
+            </button>
             {MENUS.map((menu) => (
               <Menu.Item key={menu.title}>
                 {menu.count && <Menu.Item.Badge>{menu.count}</Menu.Item.Badge>}
