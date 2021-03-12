@@ -9,6 +9,9 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      black: {
+        DEFAULT: '#000000',
+      },
       white: {
         DEFAULT: '#FFFFFF',
       },
@@ -18,6 +21,7 @@ module.exports = {
         DEFAULT: '#262F38',
         light: '#283038',
         lightest: '#89929B',
+        tab: '#C1C1C1',
       },
       blue: {
         DEFAULT: '#07A9FF',

@@ -1,81 +1,82 @@
-import { Panel, Menu } from '../components';
-import Icon from '../components/Icon';
-import MENUS from '../menu.json';
-import Logo from '../../public/logo.svg';
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import Image from 'next/image';
+import Logo from '../../public/logo-black.svg';
 
 export default function Home() {
   return (
-    <div className="flex flex-row h-screen">
-      <Panel>
-        <Panel.Header>
-          <Logo />
-          <button type="button">
-            <Icon
-              family="Remix"
-              name="RiCloseFill"
-              className="text-gray-lightest"
-              size="30"
-            />
-          </button>
-        </Panel.Header>
-        <Panel.Body>
-          <Menu>
+    <div className="flex h-screen bg-white">
+      <div className="bg-blue w-1/2 h-full">
+        {/* <Image
+          src="/login-bg.png"
+          layout="responsive"
+          className="w-full h-full"
+        /> */}
+      </div>
+      <div className="flex flex-col items-center justify-around py-12 px-36 bg-white w-1/2 h-full">
+        <Logo />
+        <div className="flex flex-col w-full">
+          <div className="flex">
             <button
               type="button"
-              className="group flex items-center justify-between px-4 py-5 bg-gray-light hover:bg-green transition-colors duration-300"
+              className="flex items-center justify-center w-1/2 font-semibold border-b-2"
             >
-              <div className="flex items-start flex-col">
-                <p className="font-normal text-xs text-gray-lightest group-hover:text-white">
-                  Select Store
-                </p>
-                <p className="font-normal text-gray-lightest group-hover:text-white">
-                  Rodney Bay
-                </p>
-              </div>
-
-              <Icon
-                family="Remix"
-                name="RiArrowRightSLine"
-                className="text-gray-lightest group-hover:text-white"
-                size="30"
-              />
+              <p className="text-black pb-2">Administrator</p>
             </button>
             <button
               type="button"
-              className="group flex items-center justify-between px-4 py-5 bg-gray-light hover:bg-green transition-colors duration-300"
+              className="flex items-center justify-center w-1/2 font-semibold border-b-2 border-gray-tab"
             >
-              <div className="flex items-start flex-col">
-                <p className="font-normal text-xs text-gray-lightest group-hover:text-white">
-                  New Orders
-                </p>
-                <p className="font-normal text-gray-lightest group-hover:text-white">
-                  Available
-                </p>
-              </div>
-              <Icon
-                family="Remix"
-                name="RiArrowRightSLine"
-                className="text-gray-lightest group-hover:text-white"
-                size="30"
-              />
+              <p className="text-gray-tab pb-2">Team Member</p>
             </button>
-            {MENUS.map((menu) => (
-              <Menu.Item key={menu.title}>
-                {menu.count && <Menu.Item.Badge>{menu.count}</Menu.Item.Badge>}
-                <Icon
-                  family={menu.iconFamily}
-                  name={menu.iconName}
-                  className="mb-4 text-gray-lightest group-hover:text-white"
-                  size="30"
-                />
-                <Menu.Item.Title>{menu.title}</Menu.Item.Title>
-              </Menu.Item>
-            ))}
-          </Menu>
-        </Panel.Body>
-        <Panel.Footer />
-      </Panel>
-      <div className="flex-grow bg-white">Tue., Jan. 15, 2021, 9:41 AM</div>
+          </div>
+          <div>
+            <form>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-gray-lightest font-medium"
+                >
+                  Email
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter email address"
+                    autoComplete="email"
+                    className="w-full border px-3 py-2 border-gray"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="password"
+                  className="block text-gray-lightest font-medium"
+                >
+                  Email
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Enter password"
+                    autoComplete="password"
+                    className="w-full border px-3 py-2 border-gray"
+                  />
+                </div>
+              </div>
+            </form>
+            <p>
+              Don’t have an account?
+              <a href="https://squeeze.cash" className="text-black font-bold">
+                Get started
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
