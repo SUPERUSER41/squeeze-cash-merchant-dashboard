@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Dashboard",
+    "iconFamily": "Remix",
+    "iconName": "RiDashboardLine"
+  },
+  {
+    "title": "Point of Sale",
+    "iconFamily": "Ant",
+    "iconName": "AiOutlineAppstore"
+  },
+  {
+    "title": "Orders",
+    "iconFamily": "Remix",
+    "iconName": "RiShoppingBagLine",
+    "count": 5
+  },
+  {
+    "title": "Activity",
+    "iconFamily": "Remix",
+    "iconName": "RiBarChartFill",
+    "count": 12
+  },
+  {
+    "title": "Promotions",
+    "iconFamily": "Bootstrap",
+    "iconName": "BsFillLightningFill"
+  },
+  {
+    "title": "My Marketplace",
+    "iconFamily": "Ionicon",
+    "iconName": "IoPricetagOutline"
+  },
+  {
+    "title": "Rewards +",
+    "iconFamily": "Feather",
+    "iconName": "FiGift"
+  },
+  {
+    "title": "Bill Payments",
+    "iconFamily": "Remix",
+    "iconName": "RiBillLine"
+  },
+  {
+    "title": "Live Support",
+    "iconFamily": "Material",
+    "iconName": "MdLiveHelp"
+  }
+]
