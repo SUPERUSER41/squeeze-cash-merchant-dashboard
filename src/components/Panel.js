@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
-import Icon from './Icon';
+import { Icon } from './Icon';
 
 const PanelContext = createContext();
 
